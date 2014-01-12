@@ -36,7 +36,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	telephony.lteOnCdmaDevice=0 \
 	ro.telephony.default_network=3 \
 	persist.radio.no_wait_for_card=1 \
-	persist.radio.dfr_mode_set=1
+	persist.radio.dfr_mode_set=1 \
+	ro.mot.build.customerid=RTGB \
+	ro.hw.radio=0x1 \
+	ro.hw.device=falcon
 
 $(call inherit-product, device/motorola/msm8226-common/keylayout/keylayout.mk)
 $(call inherit-product, vendor/motorola/xt1032/xt1032-vendor.mk)
